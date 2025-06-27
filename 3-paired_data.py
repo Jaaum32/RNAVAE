@@ -5,10 +5,10 @@ import torchvision.transforms as transforms
 
 # Caminhos das pastas
 original_dir = r"C:\Users\USER\.cache\kagglehub\datasets\arnaud58\flickrfaceshq-dataset-ffhq\versions\1"
-degraded_dir = r"C:\Users\USER\PycharmProjects\VAE\old_photos_dataset"
+degraded_dir = r"C:old_photos"
 
 # Pasta onde vamos salvar os dados prontos
-output_dir = r"C:\Users\USER\PycharmProjects\VAE\preprocessed_pairs"
+output_dir = r"preprocessed_pairs"
 os.makedirs(output_dir, exist_ok=True)
 
 # Transformação (garante que tudo vira tensor, normalizado)

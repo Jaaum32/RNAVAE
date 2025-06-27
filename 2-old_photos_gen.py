@@ -127,7 +127,7 @@ def process_image(image_path, output_dir):
     print(f"Imagem salva: {output_path}")
 
 # Processa o dataset inteiro com limite
-def process_dataset(original_dataset_path, output_base_dir="old_photos_ood", max_images=4800):
+def process_dataset(original_dataset_path, output_base_dir="old_photos", max_images=52000):
     image_files = [f for f in os.listdir(original_dataset_path) if f.lower().endswith(('.jpg', '.png', '.jpeg'))]
     if not image_files:
         print("Nenhuma imagem encontrada.")
@@ -143,5 +143,5 @@ def process_dataset(original_dataset_path, output_base_dir="old_photos_ood", max
 
 # === RODAR ===
 if __name__ == "__main__":
-    dataset_path = r"photos_ood"
+    dataset_path = r"C:\Users\USER\.cache\kagglehub\datasets\arnaud58\flickrfaceshq-dataset-ffhq\versions\1"
     process_dataset(dataset_path)
